@@ -1,4 +1,23 @@
 // Base styles
+.gallery {
+	margin: 5% 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 15px;
+	justify-content: center;
+}
+
+.galleryItem {
+	list-style-type: none;
+	opacity: 1;
+	border-radius: 10%;
+	overflow: hidden;
+}
+
+.galleryItem:hover {
+	transform: scale(1.1);
+	transition: transform 1s ease-in-out;
+}
 
 *,
 *::before,
@@ -57,3 +76,4 @@ img {
 	color: var(--wpe--color--white);
 	background-color: var(--wpe--color--accent);
 }
+
